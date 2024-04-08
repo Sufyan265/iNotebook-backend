@@ -1,6 +1,5 @@
 {
    "version": 2,
-   "name": "inotebook",
    "builds": [
       {
          "src": "index.js",
