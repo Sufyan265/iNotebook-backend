@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 // for fix "MongooseServerSelectionError" change "localhost" into "127.0.0.1" ↓ 
-const mongooseURI = "mongodb://127.0.0.1:27017/inotebook";
+// const mongooseURI = "mongodb://127.0.0.1:27017/inotebook";
+const mongooseURI = "https://inotebook-backend-gamma.vercel.app/inotebook";
 
 const connectToMongo = async () => {
     try {
