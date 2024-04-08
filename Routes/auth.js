@@ -121,4 +121,9 @@ router.post("/getuser", fetchuser, async (req, res) => {
     }
 })
 
+router.post("/sufi", fetchuser, async (req, res) => {
+    res.send("Sufyan");
+})
+
+
 module.exports = router
