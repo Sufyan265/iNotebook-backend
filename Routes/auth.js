@@ -122,7 +122,7 @@ router.post("/getuser", fetchuser, async (req, res) => {
 })
 
 router.post("/sufi", async (req, res) => {
-    res.send("Sufyan");
+    res.send("Sufyan")
 })
 
 

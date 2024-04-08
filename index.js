@@ -16,9 +16,9 @@ app.use(express.json())
 app.use("/api/auth", require("./Routes/auth"))
 app.use("/api/notes", require("./Routes/notes"))
 
-app.get('/', (req, res) => {
-  res.status(400).json({ error: 'Bad Request' });
-});
+// app.get('/', (req, res) => {
+//   res.status(400).json({ error: 'Bad Request' });
+// });
 
 app.listen(port, () => {
   console.log(`iNotebook backend listening on port http://localhost:${port}`)
