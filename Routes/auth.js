@@ -5,8 +5,10 @@ const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const fetchuser = require('../middleware/fetchuser');
+require('dotenv').config();
 
-const JWT_SECRET = "thisisanexamplesign"
+// const JWT_SECRET = "thisisanexamplesign"
+const JWT_SECRET = process.env.JWT_SECRET;
 
 
 // new request or response bhejny k liye ↓ 
