@@ -9,7 +9,11 @@ connectToMongo();
 const app = express()
 const port = 5000
 
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+  origin: 'https://inotebook-gamma-dusky.vercel.app'
+}));
+
 app.use(express.json())
 
 // "Routes" use krny k liye syntax ↓ 
