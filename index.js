@@ -11,11 +11,11 @@ const port = 5000
 
 // app.use(cors())
 app.use(cors({
-  origin: 'https://inotebook-gamma-dusky.vercel.app'
+  origin: 'https://getinotebook.vercel.app'
 }));
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://inotebook-gamma-dusky.vercel.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://getinotebook.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
